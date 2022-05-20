@@ -4,6 +4,7 @@ package Main;
  * @author Sorokin Aleksei on 20.05.2022
  **/
 public class MyArrayList {
+
     private String[] array = new String[10];
     private int size = 0;
 
