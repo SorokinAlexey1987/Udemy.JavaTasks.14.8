@@ -44,7 +44,6 @@ public class MyArrayList {
     public int getSize() {
         return size;
     }
-
     public String get (int index) {
         if (index >=0 && index < size) {
             return array[index];
@@ -53,4 +52,5 @@ public class MyArrayList {
             return "Item not found!";
         }
     }
+    //TODO: Implement Later
 }
