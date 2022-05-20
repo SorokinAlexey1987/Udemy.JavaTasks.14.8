@@ -6,30 +6,25 @@ package Main;
 public class Main {
     public static void main(String[] args) {
         //initialization
-        String[] employees = {
-                "Nikita",
-                "Egor",
-                "Maksim",
-                "Slava",
-                "Rita"
-        };
-        String[] second = new String[employees.length + 1];
-        for(int i = 0; i < employees.length; i++){
-            second[i] = employees[i];
-        }
-        second[second.length - 1] = "Ivan";
+       MyArrayList employees = new MyArrayList();
+       employees.add("Nikita");
+       employees.add("Egor");
+       employees.add("Ivan");
+       employees.add("Sergey");
+       employees.add("Maxim");
+       employees.add("Alexey");
+       for (int i = 1; i <= 10; i++) {
+           employees.add("Сотрудник " + i);
+       }
 
-        employees[1] = null;
-        String[] newNames = new String[employees.length - 1];
-        for(int i = 0, j = 0; i < employees.length; i++){
-            if (employees[i] != null){
-                newNames[j] = employees[i];
-                j++;
-            }
-        }
-        employees = newNames;
-        for(String name: employees){
-            System.out.println(name);
-        }
+       employees.remove(2);
+
+       employees.remove("Alexey");
+
+       employees.remove("Roman");
+
+       for (int i = 0; i < employees.getSize(); i++) {
+           System.out.println(employees.get(i));
+       }
     }
 }
