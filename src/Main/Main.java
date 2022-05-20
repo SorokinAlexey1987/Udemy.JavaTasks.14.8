@@ -12,9 +12,10 @@ public class Main {
        employees.add("Ivan");
        employees.add("Sergey");
        employees.add("Maxim");
+       employees.add("Pavel");
        employees.add("Alexey");
        for (int i = 1; i <= 10; i++) {
-           employees.add("Сотрудник " + i);
+           employees.add("Employees " + i);
        }
 
        employees.remove(2);

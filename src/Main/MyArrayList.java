@@ -50,7 +50,7 @@ public class MyArrayList {
             return array[index];
         }
         else {
-            return "Ёлемент не найден!";
+            return "Item not found!";
         }
     }
 }
